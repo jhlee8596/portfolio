@@ -511,6 +511,10 @@ ul.dropdown-cont {
   }
   .modal-body {
     background-color: unset;
+    height: fit-content !important;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
   }
   .modal-img {
     position: absolute;
