@@ -97,12 +97,12 @@
     gap: 2rem;
   }
   .content-wrap > .active-section {
-    padding: 2.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
   }
   .project-wrap .project-menu-wrap {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     justify-content: center;
   }
