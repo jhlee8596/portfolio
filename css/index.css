@@ -248,7 +248,8 @@
 .skill-tit {
   width: 100%;
 }
-.skill-box > li {
+.skill-box > li:last-child {
+  /* margin-top: 40px; */
 }
 .skill-box > li .skill-group {
   width: 100%;

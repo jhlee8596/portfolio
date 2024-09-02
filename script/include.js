@@ -17,7 +17,7 @@ function includeHTML(callback) {
                         elmnt.innerHTML = "Page not found.";
                     }
                     elmnt.removeAttribute("include-html");
-                    includeHTML(callback); // Continue to next element
+                    includeHTML(callback);
                 }
             };
             xhr.open("GET", file, true);
@@ -25,6 +25,5 @@ function includeHTML(callback) {
             return;
         }
     }
-    // All elements processed
     if (callback) callback();
 }
