@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.header{
+    display: none;
+    min-width: 1050px;
+    max-width: 100%;
+    margin-right: 50px;
+    z-index: 9999;
+}
+.h-nav{
+    width: 775px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 2px 2px 30px 30px;
+}
+.h-nav .gnb{
+    width: 100%;
+    padding: 0 60px;
+}
+.h-nav .gnb li .nav-menu{
+    display: block;
+    padding: 16px;
+    opacity: .6;
+    transition: .7s;
+}
+.h-nav .gnb li:hover .nav-menu{
+    opacity: 1;
+}

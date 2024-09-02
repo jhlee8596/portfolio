@@ -1,0 +1,213 @@
+<article class="modal-cont-main">
+
+    <section class="modal-cont-top">
+        <p class="modal-cont-tit">
+            D-Day 계산 기능을 이용할 수 있습니다.
+        </p>
+    </section>
+
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-circle-exclamation"></i><strong class="title-txt">주요 기능 및 특징</strong>
+        </h3>
+        <ul class="modal-cont-info cont-list">
+            <li>
+                날짜를 입력한 뒤 카운트다운 시작 버튼을 누르면 D-Day가 카운트 됩니다.
+            </li>
+            <li>
+                타이머 초기화 버튼을 클릭 시 카운트가 초기화 되며, 초기 상태로 돌아갑니다.
+            </li>
+            <li>
+                존재하지 않는 시간대로 카운트 다운 시도를 할 경우 유효한 시간대가 아닙니다 라는 텍스트가 출력됩니다.
+            </li>
+            <li>
+                이미 지난 날짜 혹은, 카운트 다운이 종료되면 타이머가 종료됩니다 라는 텍스트가 출력됩니다.
+            </li>
+        </ul>
+    </section>
+
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-screwdriver-wrench"></i><strong class="title-txt">사용 기술 및 언어</strong>
+            <small class="subtitle-txt">JavaScript</small>
+        </h3>
+        <ul class="modal-cont-tech">
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">표현식 함수</p>
+                    <div class="dropdown-cont">
+                        선언식과 다르게 호이스팅의 영향을 받지 않는 표현식 함수를 사용하였습니다.<br>
+                        함수의 호이스팅이나 전역적으로 호출해야 하는 경우가 없는 경우에는 표현식 함수를 기본적으로 사용하고 있습니다.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">Date() 함수</p>
+                    <div class="dropdown-cont">
+                        D-Day 카운터 기능에 필수적으로 필요한 날짜의 데이터를 받아올 수 있는 JavaScript의 Date() 함수가 사용되었습니다.<br>
+                        현재 날짜와 목표로 하는 날짜를 받아와 연산하게 됩니다.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">localStorage</p>
+                    <div class="dropdown-cont">
+                        D-Day를 카운트다운 하였을 때 사용자가 홈페이지를 새로고침 하거나 나갔다가 재방문을 할 경우 카운트다운이 초기화되면 이용에 불편하기 때문에 카운트다운의 정보를
+                        localStorage에 저장하여 언제든지 불러올 수 있게 하였습니다.
+                        카운트 다운시 localStorage에 정보가 저장되며, 타이머를 리셋할 경우 localStorage에서 정보를 삭제합니다.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">객체</p>
+                    <div class="dropdown-cont">
+                        날짜, 시간, 분, 초의 정보를 모두 변수에 담아 사용해야 하기 때문에 코드가 굉장히 길어졌는데 이를 해결하기 위해 정보들을 객체에 담아 관리하고 Object.keys를
+                        사용하여 호출하였습니다.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-arrows-spin"></i><strong class="title-txt">제작 과정</strong>
+        </h3>
+        <ul class="modal-cont-contri">
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">Date() 함수를 사용하여 날짜 받아오기</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            D-Day 카운터 기능에 필수적으로 필요한 날짜의 데이터를 받아올 수 있는 JavaScript의 <span class="box-txt">Date()</span>
+                            함수가 사용되었습니다.
+                        </li>
+                        <li>
+                            현재 날짜와 목표로 하는 날짜를 받아와 연산하게 됩니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">localStorage를 사용하여 정보 저장</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            D-Day를 카운트다운 하였을 때 사용자가 홈페이지를 새로고침 하거나 나갔다가 재방문을 할 경우 카운트다운이 초기화되면 이용에 불편하기 때문에 카운트다운의 정보를
+                            <span class="box-txt">localStorage</span>에 저장하여 언제든지 불러올 수 있게 하였습니다.
+                        </li>
+                        <li>
+                            카운트 다운시 <span class="box-txt">localStorage</span> 정보가 저장되며, 타이머를 리셋할 경우 <span
+                                class="box-txt">localStorage</span> 정보를 삭제합니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">객체를 사용하여 데이터 관리</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            날짜, 시간, 분, 초의 정보를 모두 변수에 담아 사용해야 하기 때문에 코드가 굉장히 길어졌는데 이를 해결하기 위해 정보들을 객체에 담아 관리하고 <span
+                                class="box-txt">Object.keys</span>를 사용하여 호출하였습니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-triangle-exclamation"></i><strong class="title-txt">문제점 확인</strong>
+        </h3>
+        <ul class="modal-cont-review">
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">사용자가 날짜 입력 칸에 잘못된 값을 입력했을 경우</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            입력된 값이 숫자형이 아닌 문자형 데이터일 경우와, 존재하지 않는 시간의 숫자를 입력했을 경우인데, 이를 방지하기 위해 입력된 값이 <span
+                                class="box-txt">isNaN(입력된 날짜)</span>의 조건식을 작성하였습니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">localStorage에 불필요한 데이터 저장 방지</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            잘못된 날짜가 들어올 경우에도 정보가 저장되는 문제점이 있기 때문에 <span class="box-txt">localStorage.removeItem</span>
+                            메서드를 사용하여 저장을 방지하였습니다.
+                        </li>
+                        <li>
+                            사용자가 설정한 날짜와 <span class="box-txt">localStorage</span>에 저장된 날짜가 같은 날짜일 경우 타이머가 종료되게 되는데 이 때에도 정보가 저장되기 때문에 같은 날짜가 아닐 경우에만 <span class="box-txt">localStorage</span>에 정보를 새로 저장하도록
+                            하였습니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-display"></i><strong class="title-txt">작업 화면</strong>
+            <small class="subtitle-txt">이미지 클릭 시 크게 볼 수 있습니다. (작업화면이 현재와 다를 수 있습니다.)</small>
+            <small class="subtitle-txt">* 저작권 이슈가 있는 경우 첨부하지 않았습니다.</small>
+        </h3>
+        <ul class="modal-cont-gallery">
+            <li>
+                <img src="./images/project/d-day/d-day.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/d-day/d-day2.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/d-day/d-day3.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/d-day/d-day4.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/d-day/d-day5.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/d-day/d-day6.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+        </ul>
+    </section>
+
+    <div id="image-modal" class="img-modal">
+        <header class="modal-header">
+            <p class="modal-info">클릭 시 전체 화면으로 전환됩니다.</p>
+            <div class="modal-header-tit">
+                <p class="img-modal-tit">프로젝트 이미지</p>
+            </div>
+            <div class="modal-header-btn-box">
+                <a href="javascript:void(0)" class="img-full-btn" title="전체화면">
+                    <i class="fa-solid fa-expand"></i>
+                </a>
+                <a href="javascript:void(0)" class="close-img-btn" title="닫기">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+        </header>
+        <main class="modal-body">
+            <button type="button" class="prev-img-btn">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <img src="./images/project/d-day/d-day.png" alt="project-img" class="modal-img" id="modal-image">
+            <button type="button" class="next-img-btn">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+        </main>
+    </div>
+</article>

@@ -1,0 +1,170 @@
+<article class="modal-cont-main">
+
+    <section class="modal-cont-top">
+        <p class="modal-cont-tit">
+            문구류 등 판매하는 모나미 홈페이지의 클론코딩 사이트입니다.
+        </p>
+    </section>
+
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-circle-exclamation"></i><strong class="title-txt">주요 기능 및 특징</strong>
+        </h3>
+        <ul class="modal-cont-info cont-list">
+            <li>
+                드롭다운 메뉴
+            </li>
+            <li>
+                상품 이미지 슬라이드
+            </li>
+            <li>
+                탭 메뉴
+            </li>
+            <li>
+                data-
+            </li>
+        </ul>
+    </section>
+
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-screwdriver-wrench"></i><strong class="title-txt">사용 기술 및 언어</strong>
+            <small class="subtitle-txt">클릭 시 세부 내용들을 확인 할 수 있습니다.</small>
+        </h3>
+        <ul class="modal-cont-tech">
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">Swiper-Slide Plugin</p>
+                    <div class="dropdown-cont">
+                        이미지 슬라이드를 구현하기 위해 <span class="box-txt">Swiper-Slide</span> 플러그인을 활용하였습니다.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-arrows-spin"></i><strong class="title-txt">제작 과정</strong>
+        </h3>
+        <ul class="modal-cont-contri">
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">Swiper-Slide Plugin</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            Slick-Slide, Swiper-Slide 중 무엇을 사용 할 지 고민을 하였는데 원하는 기능을 구현하기에는 Swiper-Slide가 더 좋다고 판단하여
+                            체택하였습니다.
+                        </li>
+                        <li>
+                            이미지 슬라이드가 6개 까지 모두 보이고 7번째 이미지가 조금 잘려서 보이게끔 구현해야 하는데 마침 Swiper-Slide에서 지원하는 키값 중
+                            slidesPerView 에 양수 입력하여 조금 더 세밀하게 조정할 수 있었습니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">Drop=Dwon Menu</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            <span class="box-txt">JavaScript</span>의 <span class="box-txt">mouseenter</span>, <span
+                                class="box-txt">mouseleave</span>, <span class="box-txt">click</span> 이벤트 리스너를 활용하여 메뉴에
+                            마우스 오버 시 드롭다운되는 메뉴와, 토글버튼을 눌렀을 때 드롭다운 되고, 다시 토글하기 전 까지 드롭다운이 유지되는 메뉴를 구현하였습니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">Tab-Menu</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            카테고리의 버튼인 a태그의 <span class="box-txt">title</span> 속성을 <span
+                                class="box-txt">JavaScript</span>의
+                            <span class="box-txt">getAttribute()</span> 메서드를 사용하여 각 카테고리별 슬라이드 박스에 부여한 <span
+                                class="box-txt">data-category</span>와 연결하여 탭메뉴를 구현하였습니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-triangle-exclamation"></i><strong class="title-txt">문제점 확인</strong>
+        </h3>
+        <ul class="modal-cont-review">
+            <li>
+                <div class="dropdown-box">
+                    <p class="dropdown-tit">Swiper-Slide</p>
+                    <ul class="dropdown-cont cont-list">
+                        <li>
+                            4개의 슬라이드 박스를 사용해야 하는데 처음에는 4개의 박스에 모두 같은 객체를 선언하였는데 첫 번째 박스를 제외한 3개의 박스에는 슬라이드 기능이 작동하지
+                            않았습니다.<br>
+                            그래서 구글링을 통해 알아보았더니 컨테이너에 mySwiper 클래스가 들어가는 부분의 클래스명을 각각 다르게 설정하면 작동하는 것을 알아내어 구현하였습니다.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="modal-cont-section">
+        <h3 class="modal-cont-title">
+            <i class="fa-solid fa-display"></i><strong class="title-txt">작업 화면</strong>
+            <small class="subtitle-txt">이미지 클릭 시 크게 볼 수 있습니다. (작업화면이 현재와 다를 수 있습니다.)</small>
+            <small class="subtitle-txt">* 저작권 이슈가 있는 경우 첨부하지 않았습니다.</small>
+        </h3>
+        <ul class="modal-cont-gallery">
+            <li>
+                <img src="./images/project/monami/monami1.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/monami/monami2.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/monami/monami3.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/monami/monami4.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/monami/monami5.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+            <li>
+                <img src="./images/project/monami/monami6.png" alt="작업 화면" class="gallery-img">
+                <p class="gallery-txt">메인 페이지</p>
+            </li>
+        </ul>
+    </section>
+
+    <div id="image-modal" class="img-modal">
+        <header class="modal-header">
+            <p class="modal-info">클릭 시 전체 화면으로 전환됩니다.</p>
+            <div class="modal-header-tit">
+                <p class="img-modal-tit">프로젝트 이미지</p>
+            </div>
+            <div class="modal-header-btn-box">
+                <a href="javascript:void(0)" class="img-full-btn" title="전체화면">
+                    <i class="fa-solid fa-expand"></i>
+                </a>
+                <a href="javascript:void(0)" class="close-img-btn" title="닫기">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+        </header>
+        <main class="modal-body">
+            <button type="button" class="prev-img-btn">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <img src="./images/project/monami/monami1.png" alt="project-img" class="modal-img" id="modal-image">
+            <button type="button" class="next-img-btn">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+        </main>
+    </div>
+</article>
