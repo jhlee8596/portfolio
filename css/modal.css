@@ -491,4 +491,31 @@ ul.dropdown-cont {
     color: #333;
     font-weight: 600;
   }
+  .img-modal {
+    padding: unset;
+  }
+  .modal-header {
+    background-color: unset;
+    top: 5%;
+    z-index: 9999;
+  }
+  .modal-header .modal-info {
+    display: none !important;
+  }
+  .img-modal-tit {
+    /* color: #fff; */
+    display: none;
+  }
+  .img-full-btn {
+    display: none;
+  }
+  .modal-body {
+    background-color: unset;
+  }
+  .modal-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
