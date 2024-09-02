@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .wrap {
+    width: 100%;
+  }
+  .url-box {
+    justify-content: center;
+  }
+  .title-wrap {
+    top: 1rem;
+  }
+  .title-box .title {
+    font-size: 3rem;
+  }
+  .title-box .sub-title {
+    top: 1.7rem;
+    letter-spacing: -1px;
+  }
+  .title-box .sub-title,
+  .title-box .sub-title strong {
+    font-size: 1.25rem;
+    width: 100%;
+    text-align: center;
+  }
+  .intro-txt {
+    font-size: 0.875rem;
+  }
+  .profile-img {
+    width: 280px;
+    left: 55%;
+  }
+
+  /* about me */
+  .cont-title {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .cont-subtitle {
+    font-size: 2rem;
+  }
+  .interview-wrap .interview-box > li .itv-tit {
+    font-size: 1.125rem;
+  }
+  .interview-wrap .interview-box > li .itv-cont {
+    padding: 0;
+    text-align: left;
+    font-size: 0.83rem;
+  }
+  .itv-cont .border-txt {
+    font-size: 0.83rem;
+  }
+  .skill-box {
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .skill-box > li {
+    width: 100%;
+  }
+  .skill-box > li .skill-list {
+    justify-content: center;
+  }
+
+  .cont-section {
+    flex-direction: column;
+    padding: 0;
+    justify-content: unset;
+    height: 4580px;
+  }
+  .sticky-nav {
+    top: 0;
+    width: 100%;
+    height: unset;
+    z-index: 9999;
+  }
+  .sticky-nav .nav-menu {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(55, 55, 55);
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+  }
+  .sticky-nav li {
+    font-size: 1.2rem;
+    color: #7e7e7e;
+  }
+
+  .content-wrap {
+    width: 100%;
+    /* height: 3000px; */
+    gap: 2rem;
+  }
+  .content-wrap > .active-section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-wrap .project-menu-wrap {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .career-box {
+    height: unset;
+    gap: 5rem;
+  }
+  .career-date,
+  .career-subtitle {
+    font-size: 0.75rem;
+  }
+  .career-title {
+    font-size: 1.25em;
+  }
+  .career-list li {
+    font-size: 0.875rem;
+  }
+  .outro.title-wrap {
+    top: 30%;
+  }
+  .outro .intro-txt {
+    padding: 0 30px;
+    font-size: 0.813rem;
+    text-align: center;
+  }
+}
