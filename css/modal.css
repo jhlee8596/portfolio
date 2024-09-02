@@ -391,6 +391,7 @@ ul.dropdown-cont {
   background-color: rgba(0, 0, 0, 0.6);
   border: none;
   cursor: pointer;
+  z-index: 9999;
 }
 .prev-img-btn i,
 .next-img-btn i {
